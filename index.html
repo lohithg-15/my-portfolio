@@ -43,6 +43,10 @@
                 <div class="hero-buttons fade-in-delay-3">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="resume.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download" aria-hidden="true"></i>
+                        <span>Download Resume</span>
+                    </a>
                 </div>
                 <div class="fade-in-delay-4 hero-connect">
                     <p class="social-heading">Let&apos;s connect</p>
@@ -60,263 +64,147 @@
     </section>
 
     <!-- Student Profile Section -->
-    <section id="profile" class="profile">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>Lohith G — Portfolio</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+      <nav class="navbar">
         <div class="container">
-            <h2 class="section-title">Student Profile</h2>
-            <div class="profile-grid">
-                <div class="profile-photo-card">
-                    <!-- Update src to point to your actual photo file (ex: assets/profile.jpg) -->
-                    <img src="p3.jpg" alt="Student portrait" class="profile-photo">
-                </div>
-                <div class="profile-details">
-                    <h3><!-- Update heading with your name -->Lohith G</h3>
-                    <p><!-- Add a short summary about yourself -->Third-year B.Tech student specializing in web development and programming</p>
-                    <ul class="info-list">
-                        <!-- Replace each value with real data -->
-                        <li><span>USN</span><span>4MC23CS083</span></li>
-                        <li><span>Department</span><span>Computer Science & Engineering</span></li>
-                        <li><span>Email</span><span>lohithg1511@gmail.com</span></li>
-                        <li><span>Phone</span><span>+91 8310678885</span></li>
-                        <li><span>Location</span><span>Hassan, India</span></li>
-                    </ul>
-                    <div class="profile-highlights">
-                        <!-- Replace semester GPA / grade info -->
-                        <div class="highlight-card">
-                            <p>Overall CGPA</p>
-                            <h4>8 / 10</h4>
-                        </div>
-                        <div class="highlight-card">
-                            <p>Experience</p>
-                            <h4>2  Main Projects</h4>
-                        </div>
-                    </div>
-                </div>
+          <a class="logo" href="#home">Lohith<span class="dot">.</span></a>
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>Lohith G — Portfolio</title>
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+          </head>
+          <body>
+            <nav class="navbar">
+            <div class="container">
+              <a class="logo" href="#home">Lohith<span class="logo-accent">G</span></a>
+              <button class="hamburger" aria-label="Toggle menu">
+              <span></span><span></span><span></span>
+              </button>
+              <ul class="nav-menu">
+              <li><a class="nav-link" href="#home">Home</a></li>
+              <li><a class="nav-link" href="#profile">Profile</a></li>
+              <li><a class="nav-link" href="#about">About</a></li>
+              <li><a class="nav-link" href="#projects">Projects</a></li>
+              <li><a class="nav-link" href="#resume">Resume</a></li>
+              <li><a class="nav-link" href="#contact">Contact</a></li>
+              </ul>
             </div>
-        </div>
-    </section>
+            </nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hello! I'm a Computer Science student and passionate about building modern, responsive websites and web applications. I love learning new technologies and turning complex problems into simple, beautiful solutions.</p>
-                    <p>I'm always eager to take on new challenges and expand my skill set. When I'm not coding, you can find me exploring new frameworks, contributing to open-source projects, or working on personal projects.</p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h3>10+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>5+</h3>
-                            <p>Technologies Mastered</p>
-                        </div>
-                    </div>
+            <main>
+            <section id="home" class="hero">
+              <div class="container hero-inner">
+              <div class="hero-left">
+                <h1>Hi, I'm <span class="highlight">Lohith G</span></h1>
+                <p class="lead">Web developer and student building usable, accessible interfaces.</p>
+                <div class="hero-actions">
+                <a class="btn btn-primary" href="#projects">See Projects</a>
+                <a class="btn btn-ghost" href="#contact">Contact Me</a>
                 </div>
+              </div>
+              <div class="hero-right">
+                <div class="card bio-card">
+                <img src="p3.jpg" alt="Lohith" class="avatar">
+                <h3>Lohith G</h3>
+                <p>Third-year B.Tech — Computer Science</p>
+                </div>
+              </div>
+              </div>
+            </section>
+
+            <section id="profile" class="section">
+              <div class="container">
+              <h2 class="section-title">Profile</h2>
+              <p class="section-lead">I build front-end experiences with clean code and thoughtful design.</p>
+              <div class="two-col">
+                <ul class="info-list">
+                <li><strong>USN</strong> 4MC23CS083</li>
+                <li><strong>Email</strong> lohithg1511@gmail.com</li>
+                <li><strong>Phone</strong> +91 8310678885</li>
+                <li><strong>Location</strong> Hassan, India</li>
+                </ul>
+                <div class="highlights">
+                <div class="chip">CGPA: 8/10</div>
+                <div class="chip">2 Main Projects</div>
+                </div>
+              </div>
+              </div>
+            </section>
+
+            <section id="about" class="section alt">
+              <div class="container">
+              <h2 class="section-title">About Me</h2>
+              <p>I enjoy turning ideas into delightful web experiences focused on accessibility and performance.</p>
+              </div>
+            </section>
+
+            <section id="projects" class="section">
+              <div class="container">
+              <h2 class="section-title">Selected Projects</h2>
+              <div class="projects-grid">
+                <article class="project-card">
+                <h3>E‑Commerce Demo</h3>
+                <p>Shopping cart demo with product filters and responsive UI.</p>
+                </article>
+                <article class="project-card">
+                <h3>Task Manager</h3>
+                <p>Vanilla JS app with drag-and-drop and persistent state.</p>
+                </article>
+                <article class="project-card">
+                <h3>Weather Dashboard</h3>
+                <p>API-driven dashboard showing forecasts and visual summaries.</p>
+                </article>
+              </div>
+              </div>
+            </section>
+
+            <section id="resume" class="section alt">
+              <div class="container">
+              <h2 class="section-title">Resume</h2>
+              <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
+              </div>
+            </section>
+
+            <section id="contact" class="section">
+              <div class="container">
+              <h2 class="section-title">Contact</h2>
+              <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                <input id="name" name="name" placeholder="Your name" required>
+                <input id="email" name="email" type="email" placeholder="Your email" required>
+                </div>
+                <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+                <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+              </form>
+              </div>
+            </section>
+            </main>
+
+            <footer class="site-footer">
+            <div class="container footer-inner">
+              <p>&copy; 2025 Lohith G — Built with care</p>
+              <div class="social">
+              <a href="https://github.com/lohithg-15" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/lohith-g-551790280/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              </div>
             </div>
-        </div>
-    </section>
+            </footer>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <p class="skills-intro">Here are the tools and technologies I use most often while building projects:</p>
-            <ul class="skills-list">
-                <li><i class="fab fa-html5" aria-hidden="true"></i>HTML5</li>
-                <li><i class="fab fa-css3-alt" aria-hidden="true"></i>CSS3</li>
-                <li><i class="fab fa-js" aria-hidden="true"></i>JavaScript</li>
-                <li><i class="fab fa-react" aria-hidden="true"></i>React & Component Architecture</li>
-                <li><i class="fab fa-node" aria-hidden="true"></i>Node.js & Express </li>
-                <li><i class="fab fa-git-alt" aria-hidden="true"></i>Git &GitHub</li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="education">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-timeline">
-                <div class="timeline-card">
-                    <!-- Update degree, institute, duration, and grades -->
-                    <div class="timeline-header">
-                        <h3>Bachelor of Technology in Computer Science</h3>
-                        <span>2023 - 2027</span>
-                    </div>
-                    <p class="timeline-institute">Malnad College of Engineering, Hassan</p>
-                    <p>Current CGPA: 8 / 10</p>
-                    <ul>
-                        <li>Specialization: Full Stack Web Development</li>
-                        <li>Key Coursework: DSA, Web Programming, database management system</li>
-                    </ul>
-                </div>
-                <div class="timeline-card">
-                    <div class="timeline-header">
-                        <h3>Senior Secondary (Class XII)</h3>
-                        <span>2021 - 2023</span>
-                    </div>
-                    <p class="timeline-institute">Brilliant PU College, Hassan</p>
-                    <p>Percentage: 93%</p>
-                    <ul>
-                        <li>Stream: Science (PCM + Biology)</li>
-                    </ul>
-                </div>
-                <div class="timeline-card">
-                    <div class="timeline-header">
-                        <h3>Secondary (Class X)</h3>
-                        <span>2020 - 2021</span>
-                    </div>
-                    <p class="timeline-institute">Royale Apollo International School</p>
-                    <p>Percentage: 91%</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <!-- Duplicate/modify each project-card with your own projects, descriptions, stacks, and links -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <!-- Replace '#' with live demo URL and GitHub repo -->
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>E-Commerce Website</h3>
-                        <p>A full-stack e-commerce platform with shopping cart, user authentication, and payment integration.</p>
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                            <span>Node.js</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>A responsive task management application with drag-and-drop functionality and real-time updates.</p>
-                        <div class="project-tags">
-                            <span>React</span>
-                            <span>CSS3</span>
-                            <span>API</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="project-overlay">
-                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Weather Dashboard</h3>
-                        <p>An interactive weather dashboard that displays current conditions and forecasts using API integration.</p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>API</span>
-                            <span>CSS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume">
-        <div class="container">
-            <h2 class="section-title">Resume</h2>
-            <div class="resume-card">
-                <!-- Point this href to your actual resume PDF -->
-                <a href="resume.pdf" target="_blank" download class="btn btn-primary">Download Resume</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect!</h3>
-                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h4>Email</h4>
-                                <!-- Replace contact information with your real details -->
-                                <p>lohithg1511@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h4>Phone</h4>
-                                <!-- Update phone number if needed -->
-                                <p>+91 8310678885</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Location</h4>
-                                <!-- Update location city/state -->
-                                <p>Hassan, Karnataka, India</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- The form currently shows an alert; connect it to your backend or service when ready -->
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-            <div class="footer-social">
-                <!-- Replace '#' with the same social URLs you used above -->
-                <a href="https://www.linkedin.com/in/lohith-g-551790280/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/lohithg-15" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
-
+            <script src="script.js"></script>
+          </body>
+          </html>
