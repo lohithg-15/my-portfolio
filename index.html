@@ -1,210 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio | Web Developer</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Lohith G — Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <!-- Navigation -->
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="#home">Portfolio</a>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#profile" class="nav-link">Profile</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#resume" class="nav-link">Resume</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+      <div class="container">
+        <a class="logo" href="#home">Lohith<span class="logo-accent">G</span></a>
+        <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#profile">Profile</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <!-- Replace the name and headline copy below with your own -->
-                <h1 class="fade-in">Hi, I'm <span class="highlight">Lohith G</span></h1>
-                <p class="fade-in-delay-1">Web Developer & Programmer</p>
-                <!-- Update this paragraph with your personal elevator pitch -->
-                <p class="fade-in-delay-2 hero-description">Passionate about building scalable, accessible web applications and writing clean, maintainable code that solves real user problems.</p>
-                <div class="hero-buttons fade-in-delay-3">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                    <a href="resume.pdf" class="btn btn-outline" download>
-                        <i class="fas fa-download" aria-hidden="true"></i>
-                        <span>Download Resume</span>
-                    </a>
-                </div>
-                <div class="fade-in-delay-4 hero-connect">
-                    <p class="social-heading">Let&apos;s connect</p>
-                    <div class="social-links">
-                        <!-- TODO: Replace '#' with your real social profile URLs -->
-                        <a href="https://www.linkedin.com/in/lohith-g-551790280/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/lohithg-15" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-left">
+            <h1>Hi, I'm <span class="highlight">Lohith G</span></h1>
+            <p class="lead">Web developer and student building usable, accessible interfaces.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">See Projects</a>
+              <a class="btn btn-ghost" href="#contact">Contact Me</a>
+              <a class="btn btn-accent" href="resume.pdf" download>
+                <i class="fas fa-download" aria-hidden="true"></i>
+                <span>Download Resume</span>
+              </a>
             </div>
+              <div class="connect">
+                <h4 class="connect-title">Connect with me</h4>
+                <div class="social-home">
+                  <a href="https://github.com/lohithg-15" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+                  <a href="https://www.linkedin.com/in/lohith-g-551790280/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                </div>
+              </div>
+          </div>
+          <div class="hero-right">
+            <div class="card bio-card">
+              <img src="p3.jpg" alt="Lohith" class="avatar">
+              <h3>Lohith G</h3>
+              <p>Third-year B.Tech — Computer Science</p>
+            </div>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <i class="fas fa-chevron-down"></i>
-        </div>
-    </section>
+      </section>
 
-    <!-- Student Profile Section -->
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width,initial-scale=1" />
-      <title>Lohith G — Portfolio</title>
-      <link rel="stylesheet" href="styles.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    </head>
-    <body>
-      <nav class="navbar">
+      <section id="profile" class="section profile-section">
         <div class="container">
-          <a class="logo" href="#home">Lohith<span class="dot">.</span></a>
-          <!DOCTYPE html>
-          <html lang="en">
-          <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width,initial-scale=1">
-            <title>Lohith G — Portfolio</title>
-            <link rel="stylesheet" href="styles.css">
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-          </head>
-          <body>
-            <nav class="navbar">
-            <div class="container">
-              <a class="logo" href="#home">Lohith<span class="logo-accent">G</span></a>
-              <button class="hamburger" aria-label="Toggle menu">
-              <span></span><span></span><span></span>
-              </button>
-              <ul class="nav-menu">
-              <li><a class="nav-link" href="#home">Home</a></li>
-              <li><a class="nav-link" href="#profile">Profile</a></li>
-              <li><a class="nav-link" href="#about">About</a></li>
-              <li><a class="nav-link" href="#projects">Projects</a></li>
-              <li><a class="nav-link" href="#resume">Resume</a></li>
-              <li><a class="nav-link" href="#contact">Contact</a></li>
-              </ul>
+          <h2 class="section-title">Profile</h2>
+          <p class="section-lead">Curious engineer in training who enjoys blending full‑stack development with AI‑powered ideas.</p>
+          <div class="two-col">
+            <ul class="info-list">
+              <li><span class="info-label">USN</span><span class="info-value">4MC23CS083</span></li>
+              <li><span class="info-label">Email</span><span class="info-value">lohithg1511@gmail.com</span></li>
+              <li><span class="info-label">Phone</span><span class="info-value">+91 8310678885</span></li>
+              <li><span class="info-label">Location</span><span class="info-value">Hassan, India</span></li>
+            </ul>
+            <div class="highlights">
+              <div class="chip">CGPA 8 / 10 — Computer Science</div>
+              <div class="chip">Hands‑on MERN & basic AI/ML workflows</div>
+              <div class="chip">Comfortable working in small product teams</div>
             </div>
-            </nav>
+          </div>
+        </div>
+      </section>
 
-            <main>
-            <section id="home" class="hero">
-              <div class="container hero-inner">
-              <div class="hero-left">
-                <h1>Hi, I'm <span class="highlight">Lohith G</span></h1>
-                <p class="lead">Web developer and student building usable, accessible interfaces.</p>
-                <div class="hero-actions">
-                <a class="btn btn-primary" href="#projects">See Projects</a>
-                <a class="btn btn-ghost" href="#contact">Contact Me</a>
-                </div>
-              </div>
-              <div class="hero-right">
-                <div class="card bio-card">
-                <img src="p3.jpg" alt="Lohith" class="avatar">
-                <h3>Lohith G</h3>
-                <p>Third-year B.Tech — Computer Science</p>
-                </div>
-              </div>
-              </div>
-            </section>
+      <section id="about" class="section alt">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <p>I enjoy turning ideas into focused web products — from sketching simple flows to building responsive interfaces and wiring up APIs.</p>
+          <p>Lately I&apos;ve been exploring how AI and machine learning can support developers and users: smarter search, better dashboards, and tiny tools that remove repetitive work. I care about clear code, good naming, and shipping small improvements often.</p>
+        </div>
+      </section>
 
-            <section id="profile" class="section">
-              <div class="container">
-              <h2 class="section-title">Profile</h2>
-              <p class="section-lead">I build front-end experiences with clean code and thoughtful design.</p>
-              <div class="two-col">
-                <ul class="info-list">
-                <li><strong>USN</strong> 4MC23CS083</li>
-                <li><strong>Email</strong> lohithg1511@gmail.com</li>
-                <li><strong>Phone</strong> +91 8310678885</li>
-                <li><strong>Location</strong> Hassan, India</li>
-                </ul>
-                <div class="highlights">
-                <div class="chip">CGPA: 8/10</div>
-                <div class="chip">2 Main Projects</div>
-                </div>
+      <section id="skills" class="section">
+        <div class="container">
+          <h2 class="section-title">Skills & Tools</h2>
+          <p class="section-lead">A quick snapshot of the technologies and workflows I use most when building projects.</p>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <div class="skill-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></div>
+              <h3 class="skill-title">MERN Development</h3>
+              <p>Building end‑to‑end web apps with React UIs, Node/Express APIs, and MongoDB for data.</p>
+              <div class="skill-tags">
+                <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
               </div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+              <h3 class="skill-title">AI & ML Foundations</h3>
+              <p>Using Python libraries and APIs to experiment with prediction, classification, and data‑driven features.</p>
+              <div class="skill-tags">
+                <span>Python</span><span>Data handling</span><span>Model basics</span>
               </div>
-            </section>
+            </article>
+            <article class="skill-card">
+              <div class="skill-icon"><i class="fas fa-code-branch" aria-hidden="true"></i></div>
+              <h3 class="skill-title">Collaboration</h3>
+              <p>Working with Git and GitHub for clean commits, reviews, and tracking progress on features.</p>
+              <div class="skill-tags">
+                <span>Git</span><span>GitHub</span><span>Team workflow</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <div class="skill-icon"><i class="fas fa-pen-ruler" aria-hidden="true"></i></div>
+              <h3 class="skill-title">Productivity & Docs</h3>
+              <p>Organising plans, reports, and presentations so ideas are easy to understand and share.</p>
+              <div class="skill-tags">
+                <span>Word</span><span>Excel</span><span>PowerPoint</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <section id="about" class="section alt">
-              <div class="container">
-              <h2 class="section-title">About Me</h2>
-              <p>I enjoy turning ideas into delightful web experiences focused on accessibility and performance.</p>
-              </div>
-            </section>
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">Selected Projects</h2>
+          <div class="projects-grid">
+            <article class="project-card">
+              <h3>E‑Commerce Demo</h3>
+              <p>Shopping cart demo with product filters and responsive UI.</p>
+            </article>
+            <article class="project-card">
+              <h3>Task Manager</h3>
+              <p>Vanilla JS app with drag-and-drop and persistent state.</p>
+            </article>
+            <article class="project-card">
+              <h3>Weather Dashboard</h3>
+              <p>API-driven dashboard showing forecasts and visual summaries.</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
-            <section id="projects" class="section">
-              <div class="container">
-              <h2 class="section-title">Selected Projects</h2>
-              <div class="projects-grid">
-                <article class="project-card">
-                <h3>E‑Commerce Demo</h3>
-                <p>Shopping cart demo with product filters and responsive UI.</p>
-                </article>
-                <article class="project-card">
-                <h3>Task Manager</h3>
-                <p>Vanilla JS app with drag-and-drop and persistent state.</p>
-                </article>
-                <article class="project-card">
-                <h3>Weather Dashboard</h3>
-                <p>API-driven dashboard showing forecasts and visual summaries.</p>
-                </article>
-              </div>
-              </div>
-            </section>
+      <section id="resume" class="section alt">
+        <div class="container">
+          <h2 class="section-title">Resume</h2>
+          <div class="resume-actions">
+            <a class="btn btn-primary" href="resume.pdf" download>
+              <i class="fas fa-download" aria-hidden="true"></i>
+              <span>Download Resume</span>
+            </a>
+          </div>
+        </div>
+      </section>
 
-            <section id="resume" class="section alt">
-              <div class="container">
-              <h2 class="section-title">Resume</h2>
-              <a class="btn btn-primary" href="resume.pdf" download>Download Resume</a>
-              </div>
-            </section>
-
-            <section id="contact" class="section">
-              <div class="container">
-              <h2 class="section-title">Contact</h2>
-              <form id="contactForm" class="contact-form">
-                <div class="form-row">
-                <input id="name" name="name" placeholder="Your name" required>
-                <input id="email" name="email" type="email" placeholder="Your email" required>
-                </div>
-                <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
-                <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Send Message</button>
-                </div>
-              </form>
-              </div>
-            </section>
-            </main>
-
-            <footer class="site-footer">
-            <div class="container footer-inner">
-              <p>&copy; 2025 Lohith G — Built with care</p>
-              <div class="social">
-              <a href="https://github.com/lohithg-15" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/lohith-g-551790280/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-              </div>
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <input id="name" name="name" placeholder="Your name" required>
+              <input id="email" name="email" type="email" placeholder="Your email" required>
             </div>
-            </footer>
+            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
 
-            <script src="script.js"></script>
-          </body>
-          </html>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2025 Lohith G — Built with care</p>
+        <div class="social">
+          <a href="https://github.com/lohithg-15" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/lohith-g-551790280/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
