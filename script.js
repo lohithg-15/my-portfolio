@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => navMenu.classList.toggle('open'));
   }
 
+  
   // Smooth scroll for internal links
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', (e) => {
