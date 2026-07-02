@@ -1,194 +1,488 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Lohith G — Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lohith G — Software Engineer & Web Developer Portfolio</title>
+    
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Personal portfolio of Lohith G, a software developer specializing in MERN stack development, cognitive agent architectures, and web integrations. B.Tech Computer Science student." />
+    <meta name="keywords" content="Lohith G, Software Engineer, Portfolio, MERN Stack, React, Developer, Hassan, India, Malnad College of Engineering, Web Developer, Cognitive Agent" />
+    <meta name="author" content="Lohith G" />
+    
+    <!-- Favicon / FontAwesome / Google Fonts -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body>
-    <nav class="navbar">
+    <!-- FLOATING GLASS NAVIGATION -->
+    <nav class="navbar" id="navbar">
       <div class="container">
-        <a class="logo" href="#home">Lohith<span class="logo-accent">G</span></a>
-        <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-        <ul class="nav-menu">
-          <li><a class="nav-link" href="#home">Home</a></li>
-          <li><a class="nav-link" href="#profile">Profile</a></li>
+        <a class="logo" href="#home">Lohith<span class="text-gradient">G</span><span class="logo-dot"></span></a>
+        <button class="hamburger" aria-label="Toggle menu" id="hamburgerBtn">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a class="nav-link active" href="#home">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#skills">Skills</a></li>
           <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#resume">Resume</a></li>
+          <li><a class="nav-link" href="#hackathons">Hackathons</a></li>
           <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <main>
+      <!-- HERO SECTION -->
       <section id="home" class="hero">
         <div class="container hero-inner">
-          <div class="hero-left">
-            <h1>Hi, I'm <span class="highlight">Lohith G</span></h1>
-            <p class="lead">Web developer and student building usable, accessible interfaces.</p>
+          <div class="hero-left reveal">
+            <div class="hero-tag">Available for Internships</div>
+            <h1>Hi, I'm <span class="text-gradient">Lohith G</span></h1>
+            <p class="lead">
+              A passionate software engineer building next-generation full-stack web applications and designing cognitive agentic flows. Combining structural algorithms with creative interfaces.
+            </p>
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#projects">See Projects</a>
-              <a class="btn btn-ghost" href="#contact">Contact Me</a>
-              <a class="btn btn-accent" href="resume.pdf" download>
+              <a class="btn btn-primary" href="#projects">Explore Work</a>
+              <a class="btn btn-secondary" href="#contact">Get In Touch</a>
+              <a class="btn btn-accent" href="resume.pdf" download id="downloadResumeHero">
                 <i class="fas fa-download" aria-hidden="true"></i>
-                <span>Download Resume</span>
+                <span>Download CV</span>
               </a>
             </div>
-              <div class="connect">
-                <h4 class="connect-title">Connect with me</h4>
-                <div class="social-home">
-                  <a href="https://github.com/lohithg-15" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-                  <a href="https://www.linkedin.com/in/lohith-g-551790280/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-                </div>
+            
+            <!-- Connect / Social block -->
+            <div class="connect-container">
+              <span>Connect with me</span>
+              <div class="social-links">
+                <a href="https://github.com/lohithg-15" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/lohith-g-551790280/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                  <i class="fab fa-linkedin"></i>
+                </a>
               </div>
+            </div>
           </div>
-          <div class="hero-right">
-            <div class="card bio-card">
-              <img src="p3.jpg" alt="Lohith" class="avatar">
-              <h3>Lohith G</h3>
-              <p>Third-year B.Tech — Computer Science</p>
+          
+          <div class="hero-right reveal">
+            <div class="bio-card-wrapper">
+              <div class="bio-card-glow"></div>
+              <article class="bio-card" id="bioCard">
+                <div class="avatar-wrapper">
+                  <img src="img.png" alt="Lohith G Photo" class="avatar" />
+                </div>
+                <h3>Lohith G</h3>
+                <p>4th Year B.Tech CS Student</p>
+                <div class="bio-meta">
+                  <span class="bio-badge">Hassan, India</span>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="profile" class="section profile-section">
-        <div class="container">
-          <h2 class="section-title">Profile</h2>
-          <p class="section-lead">Curious engineer in training who enjoys blending full‑stack development with AI‑powered ideas.</p>
-          <div class="two-col">
-            <ul class="info-list">
-              <li><span class="info-label">USN</span><span class="info-value">4MC23CS083</span></li>
-              <li><span class="info-label">Email</span><span class="info-value">lohithg1511@gmail.com</span></li>
-              <li><span class="info-label">Phone</span><span class="info-value">+91 8310678885</span></li>
-              <li><span class="info-label">Location</span><span class="info-value">Hassan, India</span></li>
-            </ul>
-            <div class="highlights">
-              <div class="chip">CGPA 8 / 10 — Computer Science</div>
-              <div class="chip">Hands‑on MERN & basic AI/ML workflows</div>
-              <div class="chip">Comfortable working in small product teams</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      <!-- ABOUT & TIMELINE SECTION -->
       <section id="about" class="section alt">
         <div class="container">
-          <h2 class="section-title">About Me</h2>
-          <p>I enjoy turning ideas into focused web products — from sketching simple flows to building responsive interfaces and wiring up APIs.</p>
-          <p>Lately I&apos;ve been exploring how AI and machine learning can support developers and users: smarter search, better dashboards, and tiny tools that remove repetitive work. I care about clear code, good naming, and shipping small improvements often.</p>
-          <p style="margin-top: 16px; color: var(--text);"><strong>My Journey:</strong> I&apos;m a third-year Computer Science student at Malnad College of Engineering, Hassan, currently maintaining a CGPA of 8/10. Beyond academics, I&apos;m passionate about problem-solving and continuous learning.</p>
-          <p style="margin-top: 12px; color: var(--text);">I believe in building practical solutions that solve real problems. Whether it&apos;s creating responsive web interfaces, integrating APIs, or exploring AI-powered features, I approach every project with curiosity and attention to detail. I&apos;m comfortable working in small teams, communicating ideas clearly, and collaborating to ship products that users love.</p>
-          <p style="margin-top: 12px; color: var(--text);">When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to open-source projects, or experimenting with new web development frameworks and techniques.</p>
+          <div class="section-header reveal">
+            <span class="section-tag">About Me</span>
+            <h2 class="section-title">My Journey & Background</h2>
+            <p class="section-desc">Building structural web platforms and orchestrating smart logic pipelines.</p>
+          </div>
+          
+          <div class="about-grid">
+            <div class="about-left reveal">
+              <p>
+                I am a fourth-year Computer Science and Engineering student at Malnad College of Engineering, Hassan. My development journey centers on constructing responsive Full-Stack setups and deploying modular, intelligent backend logic.
+              </p>
+              <p>
+                Lately, I have been building multi-tiered web portals and exploring agentic architectures—learning how to leverage API frameworks and model capabilities to create workflows that automate tasks. I aim to write clear, documentation-first code and work effectively in collaborative team sprints.
+              </p>
+              
+              <!-- Quick Stats Grid -->
+              <div class="about-stats stagger-container">
+                <div class="stat-card">
+                  <span class="stat-num">8.0</span>
+                  <span class="stat-label">B.Tech CGPA</span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-num">4+</span>
+                  <span class="stat-label">Key Repos</span>
+                </div>
+                <div class="stat-card">
+                  <span class="stat-num">1st</span>
+                  <span class="stat-label">Hackathon Award</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="about-right reveal">
+              <h3 class="timeline-title"><i class="fas fa-graduation-cap"></i> Education & Milestones</h3>
+              <div class="timeline stagger-container">
+                <!-- Timeline item 1 -->
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-time">2023 - Present</span>
+                    <h4 class="timeline-item-title">B.Tech in Computer Science</h4>
+                    <p class="timeline-institution">Malnad College of Engineering, Hassan</p>
+                    <p class="timeline-desc">Acquiring foundational training in DSA, DBMS, Computer Networks, and Full-Stack Engineering. Designing student portals and database systems, keeping an 8.0/10 average.</p>
+                  </div>
+                </div>
+                <!-- Timeline item 2 -->
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-time">2026</span>
+                    <h4 class="timeline-item-title">Hackathon Champion</h4>
+                    <p class="timeline-institution">Calmstacks Hackathon (Online)</p>
+                    <p class="timeline-desc">Led the architecture of a high-speed college portal in a 48-hour sprint. Awarded First Place for modular Next.js design structures.</p>
+                  </div>
+                </div>
+                <!-- Timeline item 3 -->
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <span class="timeline-time">2021 - 2023</span>
+                    <h4 class="timeline-item-title">Pre-University Education</h4>
+                    <p class="timeline-institution">State Board Science Stream</p>
+                    <p class="timeline-desc">Specialized studies in Mathematics, Physics, Chemistry, and basic Computer Science programming syntax.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- SKILLS SECTION -->
       <section id="skills" class="section">
         <div class="container">
-          <h2 class="section-title">Skills & Tools</h2>
-          <p class="section-lead">A quick snapshot of the technologies and workflows I use most when building projects.</p>
-          <div class="skills-grid">
+          <div class="section-header reveal">
+            <span class="section-tag">Expertise</span>
+            <h2 class="section-title">Technical Skills & Tooling</h2>
+            <p class="section-desc">Technologies and frameworks that I leverage to build digital products.</p>
+          </div>
+          
+          <div class="skills-grid stagger-container">
+            <!-- Full Stack -->
             <article class="skill-card">
               <div class="skill-icon"><i class="fas fa-layer-group" aria-hidden="true"></i></div>
-              <h3 class="skill-title">MERN Development</h3>
-              <p>Building end‑to‑end web apps with React UIs, Node/Express APIs, and MongoDB for data.</p>
+              <h3>MERN Stack Dev</h3>
+              <p>Constructing modular full stack systems. Writing reactive component designs, RESTful APIs, and modeling scalable document database schemas.</p>
               <div class="skill-tags">
-                <span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span>
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Express.js</span>
+                <span class="skill-tag">MongoDB</span>
               </div>
             </article>
+            
+            <!-- Agentic Systems (Phraised differently) -->
             <article class="skill-card">
               <div class="skill-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
-              <h3 class="skill-title">AI & ML Foundations</h3>
-              <p>Using Python libraries and APIs to experiment with prediction, classification, and data‑driven features.</p>
+              <h3>Cognitive Architectures</h3>
+              <p>Orchestrating algorithmic workflows, custom multi-modal prompt layouts, and model pipelines. Implementing vision parsing layers and predictive search APIs.</p>
               <div class="skill-tags">
-                <span>Python</span><span>Data handling</span><span>Model basics</span>
+                <span class="skill-tag">Gemini API</span>
+                <span class="skill-tag">Prompt Sprints</span>
+                <span class="skill-tag">Workflow Logic</span>
+                <span class="skill-tag">Python Models</span>
               </div>
             </article>
+            
+            <!-- Dev / Version control -->
             <article class="skill-card">
               <div class="skill-icon"><i class="fas fa-code-branch" aria-hidden="true"></i></div>
-              <h3 class="skill-title">Collaboration</h3>
-              <p>Working with Git and GitHub for clean commits, reviews, and tracking progress on features.</p>
+              <h3>Collaboration & Dev</h3>
+              <p>Structuring branches, pull reviews, clean semantic commit messages, and building continuous local deploy and server configurations.</p>
               <div class="skill-tags">
-                <span>Git</span><span>GitHub</span><span>Team workflow</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Command Line</span>
               </div>
             </article>
+            
+            <!-- CS Fundamentals -->
             <article class="skill-card">
-              <div class="skill-icon"><i class="fas fa-pen-ruler" aria-hidden="true"></i></div>
-              <h3 class="skill-title">Productivity & Docs</h3>
-              <p>Organising plans, reports, and presentations so ideas are easy to understand and share.</p>
+              <div class="skill-icon"><i class="fas fa-laptop-code" aria-hidden="true"></i></div>
+              <h3>CS Foundations</h3>
+              <p>Thorough understanding of object-oriented modeling, algorithmic complexities, schema relations, and technical software documentation.</p>
               <div class="skill-tags">
-                <span>Word</span><span>Excel</span><span>PowerPoint</span>
+                <span class="skill-tag">DSA</span>
+                <span class="skill-tag">OOPs</span>
+                <span class="skill-tag">DBMS</span>
+                <span class="skill-tag">Technical Docs</span>
               </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="projects" class="section">
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="section alt">
         <div class="container">
-          <h2 class="section-title">Selected Projects</h2>
-          <div class="projects-grid">
-            <article class="project-card">
-              <h3>Personal Portfolio Website</h3>
-              <p>My professional portfolio built with vanilla HTML, CSS, and JavaScript. Features a modern white design with smooth animations, responsive layout, responsive navigation, and multiple sections showcasing my work and skills.</p>
-              <p style="font-size: 0.85rem; margin-top: 8px; color: var(--sub);"><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript (Vanilla), GitHub for version control</p>
-              <a href="https://github.com/lohithg-15/my-portfolio.git" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; color: var(--teal); text-decoration: none; font-weight: 600; transition: var(--trans);"><i class="fab fa-github"></i>View on GitHub</a>
+          <div class="section-header reveal">
+            <span class="section-tag">Showcase</span>
+            <h2 class="section-title">Selected Projects</h2>
+            <p class="section-desc">A selection of tools and applications I have engineered, showcasing frontend, backend, and API integrations.</p>
+          </div>
+          
+          <!-- Category Filter Tabs -->
+          <div class="portfolio-filter reveal">
+            <button class="filter-btn active" data-filter="all">All Projects</button>
+            <button class="filter-btn" data-filter="web">Web Development</button>
+            <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+            <button class="filter-btn" data-filter="other">Other Tools</button>
+          </div>
+          
+          <div class="projects-grid stagger-container">
+            <!-- Project 1: Librarium -->
+            <article class="project-card" data-category="web ai-ml">
+              <div class="project-image-box">
+                <i class="fas fa-book-open project-icon-visual"></i>
+              </div>
+              <div class="project-content">
+                <div class="project-meta-tags">
+                  <span class="project-meta-tag">Intelligent Library</span>
+                </div>
+                <h3>Librarium — Digital Library System</h3>
+                <p class="project-desc">A smart library dashboard featuring image cover scan analysis via Gemini 2.5 Vision API, Open Library lookups, fuzzy search suggestions, and secure JWT-based admin controls.</p>
+                <div class="project-tech">
+                  <span>FastAPI</span>
+                  <span>SQLite</span>
+                  <span>React</span>
+                  <span>Gemini Vision</span>
+                  <span>difflib</span>
+                </div>
+                <div class="project-footer-links">
+                  <a href="https://github.com/lohithg-15/digital-lib-mang-sys" target="_blank" rel="noopener" class="project-link primary">
+                    <i class="fab fa-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
             </article>
-            <article class="project-card">
-              <h3>E‑Commerce Demo</h3>
-              <p>Shopping cart demo with product filters and responsive UI.</p>
+            
+            <!-- Project 2: MediMind -->
+            <article class="project-card" data-category="web">
+              <div class="project-image-box">
+                <i class="fas fa-pills project-icon-visual"></i>
+              </div>
+              <div class="project-content">
+                <div class="project-meta-tags">
+                  <span class="project-meta-tag">Health tracker</span>
+                </div>
+                <h3>MediMind — Medicine Reminder</h3>
+                <p class="project-desc">A full-stack tracking portal built to remind and track patient medications. Implements secure bcrypt hashing, JWT authentication, and interactive intake logs (Taken/Missed/Skipped).</p>
+                <div class="project-tech">
+                  <span>MongoDB</span>
+                  <span>Express.js</span>
+                  <span>React 18</span>
+                  <span>Node.js</span>
+                  <span>Axios</span>
+                </div>
+                <div class="project-footer-links">
+                  <a href="https://github.com/lohithg-15/full-stack-mern-activity" target="_blank" rel="noopener" class="project-link primary">
+                    <i class="fab fa-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
             </article>
-            <article class="project-card">
-              <h3>Task Manager</h3>
-              <p>Vanilla JS app with drag-and-drop and persistent state.</p>
+            
+            <!-- Project 3: College Portal (clg-website) -->
+            <article class="project-card" data-category="web">
+              <div class="project-image-box">
+                <i class="fas fa-graduation-cap project-icon-visual"></i>
+              </div>
+              <div class="project-content">
+                <div class="project-meta-tags">
+                  <span class="project-meta-tag">Hackathon Winner</span>
+                </div>
+                <h3>Calmstacks College Web Portal</h3>
+                <p class="project-desc">Winner of the Calmstacks Hackathon. An educational website designed with performance in mind. Uses Next.js App Router for server-side optimization and clean course search filters.</p>
+                <div class="project-tech">
+                  <span>Next.js</span>
+                  <span>React 19</span>
+                  <span>TypeScript</span>
+                  <span>Tailwind CSS</span>
+                  <span>Vercel</span>
+                </div>
+                <div class="project-footer-links">
+                  <a href="https://github.com/lohithg-15/clg-website" target="_blank" rel="noopener" class="project-link primary">
+                    <i class="fab fa-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
             </article>
-            <article class="project-card">
-              <h3>Weather Dashboard</h3>
-              <p>API-driven dashboard showing forecasts and visual summaries.</p>
+            
+            <!-- Project 4: Portfolio -->
+            <article class="project-card" data-category="web other">
+              <div class="project-image-box">
+                <i class="fas fa-laptop-code project-icon-visual"></i>
+              </div>
+              <div class="project-content">
+                <div class="project-meta-tags">
+                  <span class="project-meta-tag">Portfolio</span>
+                </div>
+                <h3>Developer Showcase Website</h3>
+                <p class="project-desc">A polished developer portfolio. Engineered with glassmorphic layouts, dynamic scroll-spy navigation, 3D bio card mouse tilt tracking, and fluid scroll-reveal animations.</p>
+                <div class="project-tech">
+                  <span>HTML5</span>
+                  <span>CSS3 (Custom Rules)</span>
+                  <span>JavaScript</span>
+                  <span>Git</span>
+                </div>
+                <div class="project-footer-links">
+                  <a href="https://github.com/lohithg-15/my-portfolio.git" target="_blank" rel="noopener" class="project-link primary">
+                    <i class="fab fa-github"></i> Source Code
+                  </a>
+                </div>
+              </div>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="resume" class="section alt">
+      <!-- HACKATHONS SECTION -->
+      <section id="hackathons" class="section">
         <div class="container">
-          <h2 class="section-title">Resume</h2>
-          <div class="resume-actions">
-            <a class="btn btn-primary" href="resume.pdf" download>
-              <i class="fas fa-download" aria-hidden="true"></i>
-              <span>Download Resume</span>
-            </a>
+          <div class="section-header reveal">
+            <span class="section-tag">Competitions</span>
+            <h2 class="section-title">Hackathons & Team Sprints</h2>
+            <p class="section-desc">Prototype builds under pressure, collaborative sprint code runs, and technical contest achievements.</p>
+          </div>
+          
+          <div class="hackathons-grid stagger-container">
+            <!-- Calmstacks Hackathon Winner -->
+            <article class="hackathon-card reveal">
+              <div class="hackathon-header">
+                <span class="hackathon-badge winner">1st Place Winner</span>
+                <span class="hackathon-date">June 2026</span>
+              </div>
+              <h3 class="hackathon-title">Calmstacks Online Hackathon</h3>
+              <p>Participated in the online sprint organized by Calmstacks. Led a small product team to design, build, and pitch an academic directory portal within 48 hours.</p>
+              <div class="hackathon-project">
+                <strong>Project Built: College Web Portal</strong>
+                <span>Engineered with Next.js App Router and deployed live on Vercel networks. Features lightning-fast static page loads and course query filters.</span>
+              </div>
+              <ul class="hackathon-highlights">
+                <li>Won 1st Place out of multiple competing developer teams.</li>
+                <li>Achieved high Lighthouse load performance scores via edge delivery.</li>
+                <li>Organized clean CSS layouts and accessible UI navigation workflows.</li>
+              </ul>
+              <div class="hackathon-tags">
+                <a href="https://github.com/lohithg-15/clg-website" target="_blank" rel="noopener" class="skill-tag" style="text-decoration: none;">
+                  <i class="fab fa-github"></i> View Repo
+                </a>
+                <span class="skill-tag">Next.js</span>
+                <span class="skill-tag">Tailwind CSS</span>
+                <span class="skill-tag">TypeScript</span>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
+      <!-- RESUME CTA SECTION -->
+      <section class="section alt">
+        <div class="container">
+          <div class="cta-box reveal">
+            <div class="cta-content">
+              <h2>Seeking a Software Engineering Internship?</h2>
+              <p>I am seeking internship roles in full-stack engineering, web development, or automated systems where I can build impactful workflows and grow with senior teams.</p>
+              <a class="btn btn-primary" href="resume.pdf" download id="downloadResumeCTA">
+                <i class="fas fa-file-pdf"></i> Download Full Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
       <section id="contact" class="section">
         <div class="container">
-          <h2 class="section-title">Contact</h2>
-          <form id="contactForm" class="contact-form">
-            <div class="form-row">
-              <input id="name" name="name" placeholder="Your name" required>
-              <input id="email" name="email" type="email" placeholder="Your email" required>
+          <div class="section-header reveal">
+            <span class="section-tag">Get In Touch</span>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-desc">Have an opportunity, a project idea, or simply want to say hello? Drop a message!</p>
+          </div>
+          
+          <div class="contact-grid">
+            <div class="contact-info reveal">
+              <!-- Location Card -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-item-details">
+                  <h4>Location</h4>
+                  <p>Hassan, Karnataka, India</p>
+                </div>
+              </div>
+              
+              <!-- Email Card -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-item-details">
+                  <h4>Email</h4>
+                  <a href="mailto:lohithg1511@gmail.com">lohithg1511@gmail.com</a>
+                </div>
+              </div>
+              
+              <!-- Phone Card -->
+              <div class="contact-item">
+                <div class="contact-item-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-item-details">
+                  <h4>Phone</h4>
+                  <a href="tel:+918310678885">+91 8310678885</a>
+                </div>
+              </div>
             </div>
-            <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
-            <div class="form-actions">
-              <button type="submit" class="btn btn-primary">Send Message</button>
+            
+            <div class="contact-form-wrapper reveal">
+              <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <input type="text" id="name" name="name" class="form-input" placeholder="Name" required />
+                    <label for="name" class="form-label">Your Name</label>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Email" required />
+                    <label for="email" class="form-label">Your Email</label>
+                  </div>
+                </div>
+                <div class="form-group textarea-group">
+                  <textarea id="message" name="message" class="form-textarea" placeholder="Message" required></textarea>
+                  <label for="message" class="form-label">Your Message</label>
+                </div>
+                <div id="submitStatus" class="submit-status"></div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+              </form>
             </div>
-          </form>
+          </div>
         </div>
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="container footer-inner">
-        <p>&copy; 2025 Lohith G — Built with care</p>
-        <div class="social">
-          <a href="https://github.com/lohithg-15" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/lohith-g-551790280/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <p>&copy; 2026 Lohith G. All rights reserved. Built with premium code styling.</p>
+        <div class="social-links">
+          <a href="https://github.com/lohithg-15" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/lohith-g-551790280/" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </div>
       </div>
     </footer>
