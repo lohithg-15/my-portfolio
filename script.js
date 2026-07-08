@@ -121,25 +121,91 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Interactive Card Tilt for Bio Card
-  const bioCard = document.querySelector('.bio-card');
-  if (bioCard) {
-    const wrapper = bioCard.parentElement;
-    wrapper.addEventListener('mousemove', (e) => {
-      const rect = wrapper.getBoundingClientRect();
-      const x = e.clientX - rect.left - rect.width / 2;
-      const y = e.clientY - rect.top - rect.height / 2;
-      
-      // Calculate rotation angles (max 10 degrees)
-      const rotateX = -(y / (rect.height / 2)) * 10;
-      const rotateY = (x / (rect.width / 2)) * 10;
-      
-      bioCard.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+  // ==========================================================================
+  // HIGH-PERFORMANCE 3D CARD TILT & GLARE ENGINE
+  // ==========================================================================
+  const tiltCards = document.querySelectorAll('.bio-card, .project-card, .skill-card, .contact-form-wrapper');
+
+  tiltCards.forEach(card => {
+    card.addEventListener('mouseenter', () => {
+      card.classList.add('hovering');
     });
 
-    wrapper.addEventListener('mouseleave', () => {
-      bioCard.style.transform = 'rotateX(0deg) rotateY(0deg) translateY(0px)';
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+
+      // Dynamic rotation angle calculation (max 12 degrees)
+      const rotateX = -(y / (rect.height / 2)) * 12;
+      const rotateY = (x / (rect.width / 2)) * 12;
+
+      // Dynamic shadow displacement (shifts shadow in opposite direction of mouse)
+      const shadowOffsetX = -(x / (rect.width / 2)) * 10;
+      const shadowOffsetY = -(y / (rect.height / 2)) * 10;
+
+      // Dynamic glare effect calculation
+      const angle = Math.atan2(y, x) * (180 / Math.PI) + 90;
+      const distance = Math.sqrt(x*x + y*y);
+      const maxDistance = Math.sqrt((rect.width/2)**2 + (rect.height/2)**2);
+      const glareIntensity = (distance / maxDistance) * 0.2; // max 20% glare
+
+      // Apply transformations & variables
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+      card.style.setProperty('--shadow-offset-x', `${shadowOffsetX}px`);
+      card.style.setProperty('--shadow-offset-y', `${shadowOffsetY}px`);
+      card.style.setProperty('--glare-angle', `${angle}deg`);
+      card.style.setProperty('--glare-opacity', glareIntensity);
     });
+
+    card.addEventListener('mouseleave', () => {
+      card.classList.remove('hovering');
+      // Smoothly snap back to initial positions
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+      card.style.setProperty('--shadow-offset-x', '0px');
+      card.style.setProperty('--shadow-offset-y', '0px');
+      card.style.setProperty('--glare-opacity', '0');
+    });
+  });
+
+  // ==========================================================================
+  // 3D PARALLAX BACKGROUND PRISM DRIFT ENGINE
+  // ==========================================================================
+  const bgPrism = document.getElementById('bgPrismContainer');
+  const prismShapes = document.querySelectorAll('.prism-shape');
+
+  if (bgPrism && prismShapes.length > 0) {
+    let mouseX = 0;
+    let mouseY = 0;
+    let targetX = 0;
+    let targetY = 0;
+    const ease = 0.08; // smooth dampening factor
+
+    window.addEventListener('mousemove', (e) => {
+      // Normalize coordinate: -0.5 to 0.5
+      targetX = (e.clientX / window.innerWidth) - 0.5;
+      targetY = (e.clientY / window.innerHeight) - 0.5;
+    });
+
+    // Animation loop for smooth inertia
+    const animatePrism = () => {
+      mouseX += (targetX - mouseX) * ease;
+      mouseY += (targetY - mouseY) * ease;
+
+      prismShapes.forEach((shape, index) => {
+        // Shapes move at different speeds based on index to create 3D depth parallax
+        const multiplier = (index + 1) * 35; // 35px to 140px maximum displacement
+        const translateX = mouseX * multiplier;
+        const translateY = mouseY * multiplier;
+        const rotate = mouseX * multiplier * 0.2; // subtle spin
+        
+        shape.style.transform = `translate3d(${translateX}px, ${translateY}px, 0) rotate(${rotate}deg)`;
+      });
+
+      requestAnimationFrame(animatePrism);
+    };
+
+    animatePrism();
   }
 
   // Contact Form Handlers with Floating Labels and Custom Feedback
